@@ -174,7 +174,7 @@ shopBtn.forEach(function (btn) {
 let round = document.querySelector('.round');
 
 if (round) {
-	let deadline = '2019-12-22';
+	let deadline = '2020-1-22';
 	initializeClock('countdown', deadline);
 	console.log(deadline);
 
