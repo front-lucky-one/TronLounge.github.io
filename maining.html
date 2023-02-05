@@ -1,561 +1,673 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TL</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TL</title>
-  <link rel="stylesheet" href="css/main.css">
-
-</head>
-
-<body>
-  <div class="wrapper">
-    <header class="header">
-
-      <section class="header-top">
-        <div class="container-big">
-          <div class="cripto">
-
-            <div class="cripto-which">
-              <p class="cripto-name">BETS:</p>
-              <span class="cripto-value cripto-value_orange">18,346,961</span>
-            </div>
-
-            <div class="cripto-which">
-              <p class="cripto-name">TLT WON:</p>
-              <span class="cripto-value">18,346,961</span>
-            </div>
-
-            <div class="cripto-which">
-              <p class="cripto-name">TRX WON:</p>
-              <span class="cripto-value">18,346,961</span>
-            </div>
-
-          </div>
-          <div class="seting-icon">
-            <a href="#" class="seting-link"><img src="img/lang1.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang2.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang3.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang4.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang5.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/socTell.png" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link "><img src="img/socfacebook.png" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link "><img src="img/socTwee.png" alt="" class="seting-img"></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="header-bottom">
-        <div class="container-big">
-
-
-          <nav class="nav">
-            <div class="wrapp-block-left">
-              <button type="button" class="btn-sidebar">
-                <img src="img/Квадрат.svg" alt="">
-              </button>
-              <a href="index.html" class="logo">
-                <img src="img/Лого.svg" alt="">
-              </a>
-            </div>
-            <ul class="nav__list">
-
-              <a href="rullete.html">
-                <li class="nav__items nav__items_rou">
-                  <p class="nav__link">Roulette</p>
-                </li>
-              </a>
-              <a href="range.html">
-                <li class="nav__items nav__items_dice">
-                  <p class="nav__link">Dice</p>
-                </li>
-              </a>
-              <a href="maining.html">
-                <li class="nav__items nav__items_ming">
-                  <p class="nav__link">Mining</p>
-                </li>
-              </a>
-              <a href="inventory.html">
-                <li class="nav__items nav__items_div">
-                  <p class="nav__link">Dividents</p>
-                </li>
-              </a>
-            </ul>
-            <button class="massage-btn massage-btn_mobile" onclick="onFlip(event)">
-              <img src="img/barchat.png" alt="">
-            </button>
-          </nav>
-
-          <div class="wrapp-block-right">
-
-            <div class="currency">
-              <div class="currency-wrapp">
-                <p class="currency-num">0.305</p>
-                <span class="currency-name">TLT</span>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <section class="header-top">
+          <div class="container-big">
+            <div class="cripto">
+              <div class="cripto-which">
+                <p class="cripto-name">BETS:</p>
+                <span class="cripto-value cripto-value_orange">18,346,961</span>
               </div>
-              <div class="currency-wrapp currency-wrapp_modal">
-                <p class="currency-num currency-num_logo">539</p>
-                <span class="currency-name currency-name_red">TRX</span>
-                <div class="wrap-button">
-                  <button type="button" class="currency-btn"></button>
-                </div>
 
+              <div class="cripto-which">
+                <p class="cripto-name">TLT WON:</p>
+                <span class="cripto-value">18,346,961</span>
               </div>
-              <div class="shop-wrap ">
-                <form action="#" class="shop-modal">
-                  <div class="shop-wrapp-name">
-                    <p class="shop-name">Deposit</p>
-                    <p class="shop-name">Withdraw</p>
-                  </div>
-                  <div class="modal-bottom-wrapp">
 
-                    <div class="cripto-block">
-                      <span class="cripto-block__name">Количество:</span>
-                      <div class="cripto-block__form dateInput">
-                        <input type="number" class="cripto-block__input" id="dateInput-day" value="14288">
-                        <button type="button" class="cripto-block__dateplus"></button>
-                        <button type="button" class="cripto-block__datemin"></button>
-                        <span class="color-blue color-blue_red">TLT</span>
-                      </div>
-                    </div>
-                    <button class="shop-btn">Deposit</button>
-                  </div>
-                </form>
+              <div class="cripto-which">
+                <p class="cripto-name">TRX WON:</p>
+                <span class="cripto-value">18,346,961</span>
               </div>
             </div>
-
-            <div class="login">
-
-              <a href="#" class="btn-login">
-                <span>Login via</span>
-                <img src="img/trx.svg" alt="">
-                <span>TRONLINK</span>
-              </a>
-
-            </div>
-            <button class="massage-btn" onclick="deskSidebar(event)"><img src="img/barchat.png" alt=""></button>
-          </div>
-
-        </div>
-      </section>
-
-    </header>
-
-    <main class="main">
-      <div class="container-big">
-        <section class="left-sidebar">
-
-
-          <div class="left-sidebar__wrapp">
-            <div class="left-sidebar__top">
-              <a href="rules.html" class="left-sidebar__link">
-                <div class="left-sidebar__icon left-sidebar__icon_img1"></div>
-              </a>
-              <a href="table.html" class="left-sidebar__link ">
-                <div class="left-sidebar__icon left-sidebar__icon_img2"></div>
-              </a>
-              <a href="php.html" class="left-sidebar__link">
-                <div class="left-sidebar__icon left-sidebar__icon_img3"></div>
-              </a>
-              <a href="#" class="left-sidebar__link">
-                <div class="left-sidebar__icon left-sidebar__icon_img4"></div>
-              </a>
-            </div>
-
-            <div class="left-sidebar__bottom">
-              <a href="#" class="left-sidebar__link left-sidebar__link_bg ">
-                <div class="left-sidebar__icon left-sidebar__icon_img5"></div>
-              </a>
-              <a href="#" class="left-sidebar__link left-sidebar__link_bg">
-                <div class="left-sidebar__icon left-sidebar__icon_img6"></div>
-              </a>
+            <div class="seting-icon">
+              <a href="#" class="seting-link"
+                ><img src="img/lang1.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang2.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang3.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang4.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang5.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/socTell.png" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/socfacebook.png" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/socTwee.png" alt="" class="seting-img"
+              /></a>
             </div>
           </div>
-
         </section>
-        <section class="mining-section section-seting">
-          <div class="container-small">
-            <div class="mining-info">
-              <div class="mining-content">
-                <div class="mining-name">
-                  <h2 class="section-title">Mining</h2>
-                  <h3 class="section-subtitle">TronLounge Token (<span class="color-violet">TLT</span>)</h3>
+        <section class="header-bottom">
+          <div class="container-big">
+            <nav class="nav">
+              <div class="wrapp-block-left">
+                <button type="button" class="btn-sidebar">
+                  <img src="img/Квадрат.svg" alt="" />
+                </button>
+                <a href="index.html" class="logo">
+                  <img src="img/Лого.svg" alt="" />
+                </a>
+              </div>
+              <ul class="nav__list">
+                <a href="rullete.html">
+                  <li class="nav__items nav__items_rou">
+                    <p class="nav__link">Roulette</p>
+                  </li>
+                </a>
+                <a href="range.html">
+                  <li class="nav__items nav__items_dice">
+                    <p class="nav__link">Dice</p>
+                  </li>
+                </a>
+                <a href="maining.html">
+                  <li class="nav__items nav__items_ming">
+                    <p class="nav__link">Mining</p>
+                  </li>
+                </a>
+                <a href="inventory.html">
+                  <li class="nav__items nav__items_div">
+                    <p class="nav__link">Dividents</p>
+                  </li>
+                </a>
+              </ul>
+              <button
+                class="massage-btn massage-btn_mobile"
+                onclick="onFlip(event)"
+              >
+                <img src="img/barchat.png" alt="" />
+              </button>
+            </nav>
+
+            <div class="wrapp-block-right">
+              <div class="currency">
+                <div class="currency-wrapp">
+                  <p class="currency-num">0.305</p>
+                  <span class="currency-name">TLT</span>
                 </div>
-                <p class="section-description">Как это работает? За каждые <span class="color-brightOrange">500</span>
-                  TRX что были<br>
-                  потрачены на ставки - вы получаете 1 TLT. Они нужны для игры « <span
-                    class="color-blue">Название</span> »</p>
-                <p class="section-paragraph">В этой игре нужно покупать различные лоты и каждый их них, в зависимости от
-                  своего класса, будет приносить
-                  вам регулярную прибыль. Каждый лот имеет свой срок действия в течении которого он будет активным.
-                  После
-                  окончания срока - он будет удален.</p>
+                <div class="currency-wrapp currency-wrapp_modal">
+                  <p class="currency-num currency-num_logo">539</p>
+                  <span class="currency-name currency-name_red">TRX</span>
+                  <div class="wrap-button">
+                    <button type="button" class="currency-btn"></button>
+                  </div>
+                </div>
+                <div class="shop-wrap">
+                  <form action="#" class="shop-modal">
+                    <div class="shop-wrapp-name">
+                      <p class="shop-name">Deposit</p>
+                      <p class="shop-name">Withdraw</p>
+                    </div>
+                    <div class="modal-bottom-wrapp">
+                      <div class="cripto-block">
+                        <span class="cripto-block__name">Количество:</span>
+                        <div class="cripto-block__form dateInput">
+                          <input
+                            type="number"
+                            class="cripto-block__input"
+                            id="dateInput-day"
+                            value="14288"
+                          />
+                          <div class="cripto-block__wrapp-btn">
+                            <button
+                              type="button"
+                              class="cripto-block__dateplus"
+                            ></button>
+                            <button
+                              type="button"
+                              class="cripto-block__datemin"
+                            ></button>
+                          </div>
+
+                          <span class="color-blue color-blue_red">TLT</span>
+                        </div>
+                      </div>
+                      <button class="shop-btn">Deposit</button>
+                    </div>
+                  </form>
+                </div>
               </div>
 
-              <div class="mining-persent">
-                <h2 class="mining-persent-name">Burned TLT</h2>
-                <p class="mining-value">98,385,113 (<span class="color-orange">29%</span>)</p>
+              <div class="login">
+                <a href="#" class="btn-login">
+                  <span>Login via</span>
+                  <img src="img/trx.svg" alt="" />
+                  <span>TRONLINK</span>
+                </a>
               </div>
-
+              <button class="massage-btn" onclick="deskSidebar(event)">
+                <img src="img/barchat.png" alt="" />
+              </button>
             </div>
-            <div class="mining-wrapp-round">
+          </div>
+        </section>
+      </header>
 
-              <div class="authorization-wrapp">
-                <div class="authorization-title-wrapp">
-                  <img src="img/logoround.png" alt="">
-                  <h2 class="authorization-title">Получите бонус <span class="color-blue">х1.2</span> к майнингу</h2>
-                </div>
-                <p class="authorization-paragraph">Авторизуйтесь и получите при запуске бонус <span
-                    class="color-blue">х1.2</span> к майнингу на <span class="color-blue">2</span> недели
-                </p>
-                <div class="authorization-progress">
-                  <span class="authorization-start">Старт майнинга</span>
-                </div>
-                <div class="counter" id="countdown">
-
-                  <div class="countdown-number">
-                    <span class="counter-name">Дней</span>
-                    <div class="days countdown-time"></div>
-                  </div>
-                  <div class="countdown-number">
-                    <span class="counter-name">Часов</span>
-                    <div class="hours countdown-time"></div>
-                  </div>
-                  <div class="countdown-number">
-                    <span class="counter-name">Минут</span>
-                    <div class="minutes countdown-time"></div>
-                  </div>
-                  <div class="countdown-number margin">
-                    <span class="counter-name">Секунд</span>
-                    <div class="seconds countdown-time"></div>
-                  </div>
-                </div>
-                <a href="#" class="counter-btn">Получить бонус</a>
+      <main class="main">
+        <div class="container-big">
+          <section class="left-sidebar">
+            <div class="left-sidebar__wrapp">
+              <div class="left-sidebar__top">
+                <a href="rules.html" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img1"></div>
+                </a>
+                <a href="table.html" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img2"></div>
+                </a>
+                <a href="php.html" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img3"></div>
+                </a>
+                <a href="#" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img4"></div>
+                </a>
               </div>
-              <div class="round">
-                <div class="round-num">
-                  <p class="round-bonus">Бонус <span class="color-orange">х1.2</span> активен</p>
-                  <div class="round-value">
-                    <img src="img/logoround.png" alt="">
-                    <h2 class="section-title section-title_round">Round <span class="color-blue">24</span> of<span
-                        class="color-blue"> 250</span>
+
+              <div class="left-sidebar__bottom">
+                <a href="#" class="left-sidebar__link left-sidebar__link_bg">
+                  <div class="left-sidebar__icon left-sidebar__icon_img5"></div>
+                </a>
+                <a href="#" class="left-sidebar__link left-sidebar__link_bg">
+                  <div class="left-sidebar__icon left-sidebar__icon_img6"></div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="mining-section section-seting">
+            <div class="container-small">
+              <div class="mining-info">
+                <div class="mining-content">
+                  <div class="mining-name">
+                    <h2 class="section-title">Mining</h2>
+                    <h3 class="section-subtitle">
+                      TronLounge Token (<span class="color-violet">TLT</span>)
+                    </h3>
+                  </div>
+                  <p class="section-description">
+                    Как это работает? За каждые
+                    <span class="color-brightOrange">500</span> TRX что были<br />
+                    потрачены на ставки - вы получаете 1 TLT. Они нужны для игры
+                    « <span class="color-blue">Название</span> »
+                  </p>
+                  <p class="section-paragraph">
+                    В этой игре нужно покупать различные лоты и каждый их них, в
+                    зависимости от своего класса, будет приносить вам регулярную
+                    прибыль. Каждый лот имеет свой срок действия в течении
+                    которого он будет активным. После окончания срока - он будет
+                    удален.
+                  </p>
+                </div>
+
+                <div class="mining-persent">
+                  <h2 class="mining-persent-name">Burned TLT</h2>
+                  <p class="mining-value">
+                    98,385,113 (<span class="color-orange">29%</span>)
+                  </p>
+                </div>
+              </div>
+              <div class="mining-wrapp-round">
+                <div class="authorization-wrapp">
+                  <div class="authorization-title-wrapp">
+                    <img src="img/logoround.png" alt="" />
+                    <h2 class="authorization-title">
+                      Получите бонус <span class="color-blue">х1.2</span> к
+                      майнингу
                     </h2>
                   </div>
-                </div>
-                <div id="myProgress">
-                  <div id="myBar"></div>
-                  <div class="progress-persent">67,08%</div>
-                </div>
-                <div class="progress-scale">
-                  <span>0%</span>
-                  <span>25%</span>
-                  <span>50%</span>
-                  <span>75%</span>
-                  <span>100%</span>
-                </div>
-                <div class="data">
-                  <div class="data-block">
-                    <img src="img/data1.png" alt="" class="data-img">
-                    <div class="data-value">
-                      <p class="data-name">Total TLT Mined:</p>
-                      <p class="data-persent">98,385,113 (29%)</p>
+                  <p class="authorization-paragraph">
+                    Авторизуйтесь и получите при запуске бонус
+                    <span class="color-blue">х1.2</span> к майнингу на
+                    <span class="color-blue">2</span> недели
+                  </p>
+                  <div class="authorization-progress">
+                    <span class="authorization-start">Старт майнинга</span>
+                  </div>
+                  <div class="counter" id="countdown">
+                    <div class="countdown-number">
+                      <span class="counter-name">Дней</span>
+                      <div class="days countdown-time"></div>
+                    </div>
+                    <div class="countdown-number">
+                      <span class="counter-name">Часов</span>
+                      <div class="hours countdown-time"></div>
+                    </div>
+                    <div class="countdown-number">
+                      <span class="counter-name">Минут</span>
+                      <div class="minutes countdown-time"></div>
+                    </div>
+                    <div class="countdown-number margin">
+                      <span class="counter-name">Секунд</span>
+                      <div class="seconds countdown-time"></div>
                     </div>
                   </div>
-                  <div class="data-block">
-                    <img src="img/data2.png" alt="" class="data-img">
-                    <div class="data-value">
-                      <p class="data-name">Round progress:</p>
-                      <p class="data-persent">79,354%</p>
-                    </div>
-                  </div>
-                  <div class="data-block">
-                    <img src="img/data3.png" alt="" class="data-img">
-                    <div class="data-value">
-                      <p class="data-name">Total progress:</p>
-                      <p class="data-persent">9,517%</p>
-                    </div>
-                  </div>
-                  <div class="data-block">
-                    <img src="img/data4.png" alt="" class="data-img">
-                    <div class="data-value">
-                      <p class="data-name">TRX потрачено:</p>
-                      <p class="data-persent">945,937,002</p>
-                    </div>
-                  </div>
+                  <a href="#" class="counter-btn">Получить бонус</a>
                 </div>
-                <h3 class="buy-title">Покупка TLT</h3>
-                <div class="buy">
-                  <div class="buy-left">
-                    <div class="cripto-block">
-                      <span class="cripto-block__name">Количество:</span>
-                      <form class="cripto-block__form dateInput">
-                        <input type="input" class="cripto-block__input" id="dateInput-day" value="15">
-                        <button type="button" class="cripto-block__dateplus"></button>
-                        <button type="button" class="cripto-block__datemin"></button>
-                        <span class="color-blue">TLT</span>
+                <div class="round">
+                  <div class="round-num">
+                    <p class="round-bonus">
+                      Бонус <span class="color-orange">х1.2</span> активен
+                    </p>
+                    <div class="round-value">
+                      <img src="img/logoround.png" alt="" />
+                      <h2 class="section-title section-title_round">
+                        Round <span class="color-blue">24</span> of<span
+                          class="color-blue"
+                        >
+                          250</span
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                  <div id="myProgress">
+                    <div id="myBar"></div>
+                    <div class="progress-persent">67,08%</div>
+                  </div>
+                  <div class="progress-scale">
+                    <span>0%</span>
+                    <span>25%</span>
+                    <span>50%</span>
+                    <span>75%</span>
+                    <span>100%</span>
+                  </div>
+                  <div class="data">
+                    <div class="data-block">
+                      <img src="img/data1.png" alt="" class="data-img" />
+                      <div class="data-value">
+                        <p class="data-name">Total TLT Mined:</p>
+                        <p class="data-persent">98,385,113 (29%)</p>
+                      </div>
+                    </div>
+                    <div class="data-block">
+                      <img src="img/data2.png" alt="" class="data-img" />
+                      <div class="data-value">
+                        <p class="data-name">Round progress:</p>
+                        <p class="data-persent">79,354%</p>
+                      </div>
+                    </div>
+                    <div class="data-block">
+                      <img src="img/data3.png" alt="" class="data-img" />
+                      <div class="data-value">
+                        <p class="data-name">Total progress:</p>
+                        <p class="data-persent">9,517%</p>
+                      </div>
+                    </div>
+                    <div class="data-block">
+                      <img src="img/data4.png" alt="" class="data-img" />
+                      <div class="data-value">
+                        <p class="data-name">TRX потрачено:</p>
+                        <p class="data-persent">945,937,002</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="buy-title">Покупка TLT</h3>
+                  <div class="buy">
+                    <div class="buy-left">
+                      <div class="cripto-block">
+                        <span class="cripto-block__name">Количество:</span>
+                        <form class="cripto-block__form dateInput">
+                          <input
+                            type="input"
+                            class="cripto-block__input"
+                            id="dateInput-day"
+                            value="15"
+                          />
+                          <div class="cripto-block__wrapp-btn">
+                            <button
+                              type="button"
+                              class="cripto-block__dateplus"
+                            ></button>
+                            <button
+                              type="button"
+                              class="cripto-block__datemin"
+                            ></button>
+                          </div>
 
-                      </form>
+                          <span class="color-blue">TLT</span>
+                        </form>
+                      </div>
+                      <p class="buy-num">
+                        <span class="buy-num-arrow"
+                          ><span class="color-violet">500</span> TRX</span
+                        ><button type="button" class="buy-num-button">
+                          <img src="img/buyarrow.png" alt="" /></button
+                        ><span class="buy-num-arrow"
+                          ><span class="color-violet">1</span> TLT</span
+                        >
+                      </p>
                     </div>
-                    <p class="buy-num"><span class="buy-num-arrow"><span class="color-violet">500</span>
-                        TRX</span><button type="button" class="buy-num-button"><img src="img/buyarrow.png"
-                          alt=""></button><span class="buy-num-arrow"><span class="color-violet">1</span> TLT</span></p>
-                  </div>
-                  <div class="buy-right">
-                    <div class="buy-price">
-                      <p class="buy-price-total">Вы потратите:</p>
-                      <p class="buy-price-num">7500 <span class="color-brightOrange">TRX</span></p>
+                    <div class="buy-right">
+                      <div class="buy-price">
+                        <p class="buy-price-total">Вы потратите:</p>
+                        <p class="buy-price-num">
+                          7500 <span class="color-brightOrange">TRX</span>
+                        </p>
+                      </div>
+                      <a href="#" class="buy-btn">КУПИТЬ</a>
                     </div>
-                    <a href="#" class="buy-btn">КУПИТЬ</a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="right-sidebar-section">
-          <div class="gradient-block"></div>
-          <div class="right-wrapp">
+          <section class="right-sidebar-section">
+            <div class="gradient-block"></div>
+            <div class="right-wrapp">
+              <div class="right-btn-chat">
+                <p class="right-btn-name">
+                  Онлайн чата: <span class="green">563</span
+                  ><button class="button"></button>
+                </p>
+              </div>
 
-            <div class="right-btn-chat">
-
-              <p class="right-btn-name">Онлайн чата: <span class="green">563</span><button class="button"></button>
-              </p>
-            </div>
-
-            <div class="scroll " id="all">
-              <div class="chat" dir="ltr">
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Forwolk gg.bet</p>
-                    <span class="chat__clock">19:36:42</span>
+              <div class="scroll" id="all">
+                <div class="chat" dir="ltr">
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Forwolk gg.bet</p>
+                      <span class="chat__clock">19:36:42</span>
+                    </div>
+                    <span class="chat__massage"
+                      >Бля, опять проебал все на блеке..</span
+                    >
                   </div>
-                  <span class="chat__massage">Бля, опять проебал все на
-                    блеке..</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Forwolk gg.bet</p>
-                    <span class="chat__clock">19:36:42</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Forwolk gg.bet</p>
+                      <span class="chat__clock">19:36:42</span>
+                    </div>
+                    <span class="chat__massage"
+                      >прив пацаны сматрите щас будет зельоный понели да</span
+                    >
                   </div>
-                  <span class="chat__massage">прив пацаны сматрите щас
-                    будет зельоный понели да</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Forwolk gg.bet</p>
-                    <span class="chat__clock">19:36:42</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Forwolk gg.bet</p>
+                      <span class="chat__clock">19:36:42</span>
+                    </div>
+                    <span class="chat__massage"
+                      >Бля, опять проебал все на блеке..</span
+                    >
                   </div>
-                  <span class="chat__massage">Бля, опять проебал все на
-                    блеке..</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Seizedwf</p>
-                    <span class="chat__clock">19:36:58</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Seizedwf</p>
+                      <span class="chat__clock">19:36:58</span>
+                    </div>
+                    <span class="chat__massage"
+                      >а я тебе говорил чтобы ты не ставил на него</span
+                    >
                   </div>
-                  <span class="chat__massage">а я тебе говорил чтобы ты не
-                    ставил на него</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__num ">253</p>
-                    <p class="chat__name chat__name_mod red">Verner2k</p>
-                    <span class="chat__clock">19:37:15</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__num">253</p>
+                      <p class="chat__name chat__name_mod red">Verner2k</p>
+                      <span class="chat__clock">19:37:15</span>
+                    </div>
+                    <span class="chat__massage red"
+                      >Ну лох, че тут еще сказать? :)</span
+                    >
                   </div>
-                  <span class="chat__massage red">Ну лох, че тут еще сказать? :)</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">S1mple </p>
-                    <span class="chat__clock">19:37:27</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">S1mple</p>
+                      <span class="chat__clock">19:37:27</span>
+                    </div>
+                    <span class="chat__massage"
+                      >Че вы тут все как обосранные сидите?</span
+                    >
                   </div>
-                  <span class="chat__massage">Че вы тут все как обосранные
-                    сидите?</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Pr0NAg1Bat0_r</p>
-                    <span class="chat__clock">19:37:51</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Pr0NAg1Bat0_r</p>
+                      <span class="chat__clock">19:37:51</span>
+                    </div>
+                    <span class="chat__massage chat__massage_smile"
+                      >О, Симплуха пришел</span
+                    >
                   </div>
-                  <span class="chat__massage chat__massage_smile">О, Симплуха пришел</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Verner2k</p>
-                    <span class="chat__clock">19:38:03</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Verner2k</p>
+                      <span class="chat__clock">19:38:03</span>
+                    </div>
+                    <span class="chat__massage"
+                      >ОПЯТЬ ЭТОТ РЕД ВЫПАЛ!!111!!!1</span
+                    >
                   </div>
-                  <span class="chat__massage">ОПЯТЬ ЭТОТ РЕД ВЫПАЛ!!111!!!1</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name blue">EnjoyMaloy</p>
-                    <span class="chat__clock">19:38:27</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name blue">EnjoyMaloy</p>
+                      <span class="chat__clock">19:38:27</span>
+                    </div>
+                    <span class="chat__massage blue"
+                      >Не капси, а то мут на сутки получишь!</span
+                    >
                   </div>
-                  <span class="chat__massage blue">Не капси, а то мут на сутки
-                    получишь!</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Forwolk gg.bet</p>
-                    <span class="chat__clock">19:36:42</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Forwolk gg.bet</p>
+                      <span class="chat__clock">19:36:42</span>
+                    </div>
+                    <span class="chat__massage"
+                      >Бля, опять проебал все на блеке..</span
+                    >
                   </div>
-                  <span class="chat__massage">Бля, опять проебал все на
-                    блеке..</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Forwolk gg.bet</p>
-                    <span class="chat__clock">19:36:42</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Forwolk gg.bet</p>
+                      <span class="chat__clock">19:36:42</span>
+                    </div>
+                    <span class="chat__massage"
+                      >Бля, опять проебал все на блеке..</span
+                    >
                   </div>
-                  <span class="chat__massage">Бля, опять проебал все на
-                    блеке..</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Forwolk gg.bet</p>
-                    <span class="chat__clock">19:36:42</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Forwolk gg.bet</p>
+                      <span class="chat__clock">19:36:42</span>
+                    </div>
+                    <span class="chat__massage"
+                      >Бля, опять проебал все на блеке..</span
+                    >
                   </div>
-                  <span class="chat__massage">Бля, опять проебал все на
-                    блеке..</span>
-                </div>
-                <div class="chat__block">
-                  <div class="chat__wrapp-name">
-                    <p class="chat__name">Forwolk gg.bet</p>
-                    <span class="chat__clock">19:36:42</span>
+                  <div class="chat__block">
+                    <div class="chat__wrapp-name">
+                      <p class="chat__name">Forwolk gg.bet</p>
+                      <span class="chat__clock">19:36:42</span>
+                    </div>
+                    <span class="chat__massage"
+                      >Бля, опять проебал все на блеке..</span
+                    >
                   </div>
-                  <span class="chat__massage">Бля, опять проебал все на
-                    блеке..</span>
                 </div>
               </div>
             </div>
-
-
-          </div>
-          <form method="post" class="chat-write">
-            <textarea type="text" class="chat-write-input" placeholder="Введите сообщение..."></textarea>
-            <div class="chat-write-smile"></div>
-            <button class="chat-write-button"></button>
-            <div class="smile-block-wrapp">
-              <div class="smile-block">
-
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img1"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img2"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img3"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img4"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img5"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img6"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img7"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img8"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img9"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img10"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img11"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img12"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img13"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img4"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img15"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img16"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img7"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img8"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img19"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img20"></span></a>
+            <form method="post" class="chat-write">
+              <textarea
+                type="text"
+                class="chat-write-input"
+                placeholder="Введите сообщение..."
+              ></textarea>
+              <div class="chat-write-smile"></div>
+              <button class="chat-write-button"></button>
+              <div class="smile-block-wrapp">
+                <div class="smile-block">
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img1"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img2"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img3"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img4"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img5"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img6"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img7"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img8"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img9"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img10"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img11"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img12"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img13"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img4"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img15"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img16"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img7"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img8"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img19"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img20"></span
+                  ></a>
+                </div>
               </div>
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer"></footer>
+      <form id="openModal" class="modalwindow" method="post" action="#">
+        <div class="modal-content">
+          <div class="modal-content-wrapp">
+            <a href="#close" title="Закрыть" class="close-modal"></a>
+            <h2 class="modal-title">Redeem code</h2>
+            <span class="modal-subtitle">Promo code</span>
+
+            <div class="modal-input-wrap">
+              <input type="text" class="modal-input" />
+              <button type="submit" class="modal-btn">Redeem</button>
             </div>
-          </form>
 
-        </section>
-      </div>
+            <span class="modal-subtitle">Bonus code</span>
 
+            <div class="modal-input-wrap">
+              <input type="text" class="modal-input" />
+              <button type="submit" class="modal-btn">Redeem</button>
+            </div>
 
-    </main>
-
-    <footer class="footer">
-
-    </footer>
-    <form id="openModal" class="modalwindow" method="post" action="#">
-      <div class="modal-content">
-        <div class="modal-content-wrapp">
-          <a href="#close" title="Закрыть" class="close-modal"></a>
-          <h2 class="modal-title">Redeem code</h2>
-          <span class="modal-subtitle">Promo code</span>
-
-          <div class="modal-input-wrap">
-
-            <input type="text" class="modal-input">
-            <button type="submit" class="modal-btn">Redeem</button>
-          </div>
-
-
-          <span class="modal-subtitle">Bonus code</span>
-
-          <div class="modal-input-wrap">
-
-            <input type="text" class="modal-input">
-            <button type="submit" class="modal-btn">Redeem</button>
-          </div>
-
-
-          <div class="modal-static">
-            <div class="modal-info">
-              <img src="img/modalUser.png" alt="">
-              <div class="modal-static-user">
-                <p class="modal-user-total">Использован:</p>
-                <p class="modal-user-num">1,049</p>
+            <div class="modal-static">
+              <div class="modal-info">
+                <img src="img/modalUser.png" alt="" />
+                <div class="modal-static-user">
+                  <p class="modal-user-total">Использован:</p>
+                  <p class="modal-user-num">1,049</p>
+                </div>
               </div>
-            </div>
-            <div class="modal-info">
-              <img src="img/modaltrx.png" alt="">
-              <div class="modal-static-user">
-                <p class="modal-user-total">TRX получено:</p>
-                <p class="modal-user-num">54,038</p>
+              <div class="modal-info">
+                <img src="img/modaltrx.png" alt="" />
+                <div class="modal-static-user">
+                  <p class="modal-user-total">TRX получено:</p>
+                  <p class="modal-user-num">54,038</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </form>
-    <form id="openCasino" class="modalcasino" method="post" action="#">
-      <div class="modal-content">
-        <div class="modal-content-wrapp">
-          <a href="#close" title="Закрыть" class="close-modal"></a>
-          <h2 class="modal-title">Купить <span class="color-blue">Фишка х1</span></h2>
-          <div class="modal-body">
-            <img src="img/Фишка.png" alt="">
-            <div class="modal-info">
-              <p class="modal-subtitle">Кол-во фишек:</p>
-              <div class="cripto-block">
-                <span class="cripto-block__name">Введите число:</span>
-                <div class="cripto-block__form dateInput">
-                  <input type="input" class="cripto-block__input" id="dateInput-day" value="1">
-                  <button type="button" class="cripto-block__dateplus"
-                    onclick="input_val('dec','dateInput-day')"></button>
-                  <button type="button" class="cripto-block__datemin"
-                    onclick="input_val('inc','dateInput-day')"></button>
-                  <span class="color-blue ">TLT</span>
+      </form>
+      <form id="openCasino" class="modalcasino" method="post" action="#">
+        <div class="modal-content">
+          <div class="modal-content-wrapp">
+            <a href="#close" title="Закрыть" class="close-modal"></a>
+            <h2 class="modal-title">
+              Купить <span class="color-blue">Фишка х1</span>
+            </h2>
+            <div class="modal-body">
+              <img src="img/Фишка.png" alt="" />
+              <div class="modal-info">
+                <p class="modal-subtitle">Кол-во фишек:</p>
+                <div class="cripto-block">
+                  <span class="cripto-block__name">Введите число:</span>
+                  <div class="cripto-block__form dateInput">
+                    <input
+                      type="input"
+                      class="cripto-block__input"
+                      id="dateInput-day"
+                      value="1"
+                    />
+                    <button
+                      type="button"
+                      class="cripto-block__dateplus"
+                      onclick="input_val('dec','dateInput-day')"
+                    ></button>
+                    <button
+                      type="button"
+                      class="cripto-block__datemin"
+                      onclick="input_val('inc','dateInput-day')"
+                    ></button>
+                    <span class="color-blue">TLT</span>
+                  </div>
+                </div>
+                <button class="modal-btn">Купить за 100,000</button>
+                <p class="modal-subtitle">Баланс TLT:</p>
+
+                <div class="currency-wrapp currency-wrapp_modal">
+                  <p class="currency-num currency-num_modal">0.305</p>
+                  <span class="currency-name currency-name_modal">TLT</span>
+                  <button
+                    type="button"
+                    class="currency-btn currency-btn_modal"
+                  ></button>
                 </div>
               </div>
-              <button class="modal-btn">Купить за 100,000</button>
-              <p class="modal-subtitle">Баланс TLT:</p>
-
-              <div class="currency-wrapp currency-wrapp_modal">
-                <p class="currency-num currency-num_modal">0.305</p>
-                <span class="currency-name currency-name_modal">TLT</span>
-                <button type="button" class="currency-btn currency-btn_modal"></button>
-              </div>
-
             </div>
           </div>
-
-
         </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
 
-  <script src="js/progresssbar.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/progresssbar.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

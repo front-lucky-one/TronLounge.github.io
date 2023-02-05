@@ -1,697 +1,903 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TL</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TL</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/swiper.css">
-
-</head>
-
-<body>
-  <div class="wrapper">
-    <header class="header">
-
-      <section class="header-top">
-        <div class="container-big">
-          <div class="cripto">
-
-            <div class="cripto-which">
-              <p class="cripto-name">BETS:</p>
-              <span class="cripto-value cripto-value_orange">18,346,961</span>
-            </div>
-
-            <div class="cripto-which">
-              <p class="cripto-name">TLT WON:</p>
-              <span class="cripto-value">18,346,961</span>
-            </div>
-
-            <div class="cripto-which">
-              <p class="cripto-name">TRX WON:</p>
-              <span class="cripto-value">18,346,961</span>
-            </div>
-
-          </div>
-          <div class="seting-icon">
-            <a href="#" class="seting-link"><img src="img/lang1.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang2.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang3.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang4.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/lang5.svg" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link"><img src="img/socTell.png" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link "><img src="img/socfacebook.png" alt="" class="seting-img"></a>
-            <a href="#" class="seting-link "><img src="img/socTwee.png" alt="" class="seting-img"></a>
-          </div>
-        </div>
-      </section>
-      <section class="header-bottom">
-        <div class="container-big">
-
-
-          <nav class="nav">
-            <div class="wrapp-block-left">
-              <button type="button" class="btn-sidebar">
-                <img src="img/Квадрат.svg" alt="">
-              </button>
-              <a href="index.html" class="logo">
-                <img src="img/Лого.svg" alt="">
-              </a>
-            </div>
-            <ul class="nav__list">
-
-              <a href="rullete.html">
-                <li class="nav__items nav__items_rou">
-                  <p class="nav__link">Roulette</p>
-                </li>
-              </a>
-              <a href="range.html">
-                <li class="nav__items nav__items_dice">
-                  <p class="nav__link">Dice</p>
-                </li>
-              </a>
-              <a href="maining.html">
-                <li class="nav__items nav__items_ming">
-                  <p class="nav__link">Mining</p>
-                </li>
-              </a>
-              <a href="inventory.html">
-                <li class="nav__items nav__items_div">
-                  <p class="nav__link">Dividents</p>
-                </li>
-              </a>
-            </ul>
-            <button class="massage-btn massage-btn_mobile" onclick="onFlip(event)">
-              <img src="img/barchat.png" alt="">
-            </button>
-          </nav>
-
-          <div class="wrapp-block-right">
-
-            <div class="currency">
-              <div class="currency-wrapp">
-                <p class="currency-num">0.305</p>
-                <span class="currency-name">TLT</span>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <section class="header-top">
+          <div class="container-big">
+            <div class="cripto">
+              <div class="cripto-which">
+                <p class="cripto-name">BETS:</p>
+                <span class="cripto-value cripto-value_orange">18,346,961</span>
               </div>
-              <div class="currency-wrapp currency-wrapp_modal">
-                <p class="currency-num currency-num_logo">539</p>
-                <span class="currency-name currency-name_red">TRX</span>
-                <div class="wrap-button">
-                  <button type="button" class="currency-btn"></button>
-                </div>
 
+              <div class="cripto-which">
+                <p class="cripto-name">TLT WON:</p>
+                <span class="cripto-value">18,346,961</span>
               </div>
-              <div class="shop-wrap ">
-                <form action="#" class="shop-modal">
-                  <div class="shop-wrapp-name">
-                    <p class="shop-name">Deposit</p>
-                    <p class="shop-name">Withdraw</p>
-                  </div>
-                  <div class="modal-bottom-wrapp">
 
-                    <div class="cripto-block">
-                      <span class="cripto-block__name">Количество:</span>
-                      <div class="cripto-block__form dateInput">
-                        <input type="number" class="cripto-block__input" id="dateInput-day" value="14288">
-                        <button type="button" class="cripto-block__dateplus"></button>
-                        <button type="button" class="cripto-block__datemin"></button>
-                        <span class="color-blue color-blue_red">TLT</span>
-                      </div>
-                    </div>
-                    <button class="shop-btn">Deposit</button>
-                  </div>
-                </form>
+              <div class="cripto-which">
+                <p class="cripto-name">TRX WON:</p>
+                <span class="cripto-value">18,346,961</span>
               </div>
             </div>
-
-            <div class="login">
-
-              <a href="#" class="btn-login">
-                <span>Login via</span>
-                <img src="img/trx.svg" alt="">
-                <span>TRONLINK</span>
-              </a>
-
-            </div>
-            <button class="massage-btn" onclick="deskSidebar(event)"><img src="img/barchat.png" alt=""></button>
-          </div>
-
-        </div>
-      </section>
-
-    </header>
-
-    <main class="main">
-      <div class="container-big">
-        <section class="left-sidebar">
-
-
-          <div class="left-sidebar__wrapp">
-            <div class="left-sidebar__top">
-              <a href="rules.html" class="left-sidebar__link">
-                <div class="left-sidebar__icon left-sidebar__icon_img1"></div>
-              </a>
-              <a href="table.html" class="left-sidebar__link ">
-                <div class="left-sidebar__icon left-sidebar__icon_img2"></div>
-              </a>
-              <a href="php.html" class="left-sidebar__link">
-                <div class="left-sidebar__icon left-sidebar__icon_img3"></div>
-              </a>
-              <a href="#" class="left-sidebar__link">
-                <div class="left-sidebar__icon left-sidebar__icon_img4"></div>
-              </a>
-            </div>
-
-            <div class="left-sidebar__bottom">
-              <a href="#" class="left-sidebar__link left-sidebar__link_bg ">
-                <div class="left-sidebar__icon left-sidebar__icon_img5"></div>
-              </a>
-              <a href="#" class="left-sidebar__link left-sidebar__link_bg">
-                <div class="left-sidebar__icon left-sidebar__icon_img6"></div>
-              </a>
+            <div class="seting-icon">
+              <a href="#" class="seting-link"
+                ><img src="img/lang1.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang2.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang3.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang4.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/lang5.svg" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/socTell.png" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/socfacebook.png" alt="" class="seting-img"
+              /></a>
+              <a href="#" class="seting-link"
+                ><img src="img/socTwee.png" alt="" class="seting-img"
+              /></a>
             </div>
           </div>
-
         </section>
-        <section class="roulette-section section-seting">
-          <div class="container-small">
-            <div class="round-hash">
-              <h2 class="round-name">Round hash:</h2>
-              <p class="round-value">
-                dk40sdal3201fl2q30asdlf35ylxzoa045956sdkldu2dal3201fl2q30asddk40sdal3201flsdlf35ylxzoa</p>
-            </div>
-            <div class="progress-bar">
-              <svg viewBox="0 0 50 2" style="width: 100%;">
-                <defs>
-                  <linearGradient id="e" x1="0" y1="1" x2="55" y2="1" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#56ab2f" offset="0" />
-                    <stop stop-color="#a8e063" offset="1" />
-                  </linearGradient>
-                </defs>
-                <line x1="0" y1="1" x2="55" y2="1" stroke="#353b56" stroke-dasharray="50 2"></line>
-                <line x1="0" y1="1" x2="55" y2="1" stroke="url(#e)" stroke-dasharray="50 1" id="dashstart"
-                  class="green">
-                </line>
-                <line x1="0" y1="1" x2="55" y2="1" stroke="#2a2f42" stroke-dasharray="1 4" stroke-dashoffset="3"
-                  class="separator"></line>
-              </svg>
-            </div>
-            <div class="rolling-in"><span>Rolling in 6.48...</span></div>
-            <div class="slider-roulette">
-              <div class="swiper-container swiperRoulete">
-
-                <div class="swiper-wrapper">
-
-                  <div class="swiper-slide"><span>7</span></div>
-                  <div class="swiper-slide"><span>1</span></div>
-                  <div class="swiper-slide"><span>14</span></div>
-                  <div class="swiper-slide"><span>3</span></div>
-                  <div class="swiper-slide"><span>5</span></div>
-                  <div class="swiper-slide"><span>12</span></div>
-                  <div class="swiper-slide"><span>8</span></div>
-                  <div class="swiper-slide"><span>11</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-                  <div class="swiper-slide"><span>4</span></div>
-                  <div class="swiper-slide"><span>2</span></div>
-                  <div class="swiper-slide"><span>6</span></div>
-                  <div class="swiper-slide"><span>13</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-                  <div class="swiper-slide"><span>7</span></div>
-                  <div class="swiper-slide"><span>1</span></div>
-                  <div class="swiper-slide"><span>14</span></div>
-                  <div class="swiper-slide"><span>3</span></div>
-                  <div class="swiper-slide"><span>5</span></div>
-                  <div class="swiper-slide"><span>12</span></div>
-                  <div class="swiper-slide"><span>8</span></div>
-                  <div class="swiper-slide"><span>11</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-                  <div class="swiper-slide"><span>4</span></div>
-                  <div class="swiper-slide"><span>2</span></div>
-                  <div class="swiper-slide"><span>6</span></div>
-                  <div class="swiper-slide"><span>13</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-                  <div class="swiper-slide"><span>7</span></div>
-                  <div class="swiper-slide"><span>1</span></div>
-                  <div class="swiper-slide"><span>14</span></div>
-                  <div class="swiper-slide"><span>3</span></div>
-                  <div class="swiper-slide"><span>5</span></div>
-                  <div class="swiper-slide"><span>12</span></div>
-                  <div class="swiper-slide"><span>8</span></div>
-                  <div class="swiper-slide"><span>11</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-                  <div class="swiper-slide"><span>4</span></div>
-                  <div class="swiper-slide"><span>2</span></div>
-                  <div class="swiper-slide"><span>6</span></div>
-                  <div class="swiper-slide"><span>13</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-                  <div class="swiper-slide"><span>7</span></div>
-                  <div class="swiper-slide"><span>1</span></div>
-                  <div class="swiper-slide"><span>14</span></div>
-                  <div class="swiper-slide"><span>3</span></div>
-                  <div class="swiper-slide"><span>5</span></div>
-                  <div class="swiper-slide"><span>12</span></div>
-                  <div class="swiper-slide"><span>8</span></div>
-                  <div class="swiper-slide"><span>11</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-                  <div class="swiper-slide"><span>4</span></div>
-                  <div class="swiper-slide"><span>2</span></div>
-                  <div class="swiper-slide"><span>6</span></div>
-                  <div class="swiper-slide"><span>13</span></div>
-                  <div class="swiper-slide swiper-slide_green"><span>0</span></div>
-
-
-                </div>
-
-                <div class="swiper-pagination">
-                  <div class="swiper-block"></div>
-                  <div class="swiper-block"></div>
-                  <div class="swiper-block"></div>
-                  <div class="swiper-block"></div>
-                  <div class="swiper-block"></div>
-                </div>
-
-
-
+        <section class="header-bottom">
+          <div class="container-big">
+            <nav class="nav">
+              <div class="wrapp-block-left">
+                <button type="button" class="btn-sidebar">
+                  <img src="img/Квадрат.svg" alt="" />
+                </button>
+                <a href="index.html" class="logo">
+                  <img src="img/Лого.svg" alt="" />
+                </a>
               </div>
-            </div>
-            <div class="roulette-info">
-              <div class="roulette-wrap-prew">
-                <div class="roulette-prew">
-                  <div class="swiper-slide swiper-slide_mod"><span class="font-mod">12</span></div>
-                  <div class="swiper-slide swiper-slide_mod"><span class="font-mod">8</span></div>
-                  <div class="swiper-slide swiper-slide_mod"><span class="font-mod">11</span></div>
-                  <div class="swiper-slide swiper-slide_green swiper-slide_mod"><span class="font-mod">0</span></div>
-                  <div class="swiper-slide swiper-slide_mod"><span class="font-mod">11</span></div>
+              <ul class="nav__list">
+                <a href="rullete.html">
+                  <li class="nav__items nav__items_rou">
+                    <p class="nav__link">Roulette</p>
+                  </li>
+                </a>
+                <a href="range.html">
+                  <li class="nav__items nav__items_dice">
+                    <p class="nav__link">Dice</p>
+                  </li>
+                </a>
+                <a href="maining.html">
+                  <li class="nav__items nav__items_ming">
+                    <p class="nav__link">Mining</p>
+                  </li>
+                </a>
+                <a href="inventory.html">
+                  <li class="nav__items nav__items_div">
+                    <p class="nav__link">Dividents</p>
+                  </li>
+                </a>
+              </ul>
+              <button
+                class="massage-btn massage-btn_mobile"
+                onclick="onFlip(event)"
+              >
+                <img src="img/barchat.png" alt="" />
+              </button>
+            </nav>
 
-
+            <div class="wrapp-block-right">
+              <div class="currency">
+                <div class="currency-wrapp">
+                  <p class="currency-num">0.305</p>
+                  <span class="currency-name">TLT</span>
                 </div>
-                <p class="roulette-desk">Previous rolls</p>
-              </div>
-              <div class="roulette-wrapp-next">
-                <p class="roulette-desk roulette-desk_next">Last 100 rolls</p>
-                <div class="roulette-next">
-
-
-                  <div class="swiper-slide swiper-slide_mod">
-
+                <div class="currency-wrapp currency-wrapp_modal">
+                  <p class="currency-num currency-num_logo">539</p>
+                  <span class="currency-name currency-name_red">TRX</span>
+                  <div class="wrap-button">
+                    <button type="button" class="currency-btn"></button>
                   </div>
-                  <span class="next-num">57</span>
-                  <div class="swiper-slide swiper-slide_green swiper-slide_mod">
-                  </div>
-                  <span class="next-num">7</span>
-                  <div class="swiper-slide swiper-slide_mod">
-
-                  </div>
-                  <span class="next-num">36</span>
                 </div>
-              </div>
-            </div>
-            <div class="roulette-seting">
-              <div class="roulette-seting-value">
-                <div class="cripto-block ">
-                  <span class="cripto-block__name">Количество:</span>
-                  <form class="cripto-block__form dateInput">
-                    <input type="number" class="cripto-block__input" id="dateInput-day" value="14288">
-                    <span class="color-blue color-blue_red">TRX</span>
-                    <button type="button" class="cripto-block__dateplus"></button>
-                    <button type="button" class="cripto-block__datemin"></button>
+                <div class="shop-wrap">
+                  <form action="#" class="shop-modal">
+                    <div class="shop-wrapp-name">
+                      <p class="shop-name">Deposit</p>
+                      <p class="shop-name">Withdraw</p>
+                    </div>
+                    <div class="modal-bottom-wrapp">
+                      <div class="cripto-block">
+                        <span class="cripto-block__name">Количество:</span>
+                        <div class="cripto-block__form dateInput">
+                          <input
+                            type="number"
+                            class="cripto-block__input"
+                            id="dateInput-day"
+                            value="14288"
+                          />
+                          <div class="cripto-block__wrapp-btn">
+                            <button
+                              type="button"
+                              class="cripto-block__dateplus"
+                            ></button>
+                            <button
+                              type="button"
+                              class="cripto-block__datemin"
+                            ></button>
+                          </div>
+
+                          <span class="color-blue color-blue_red">TLT</span>
+                        </div>
+                      </div>
+                      <button class="shop-btn">Deposit</button>
+                    </div>
                   </form>
                 </div>
-                <a href="#openCasino" class="seting-btn-dark seting-btn-dark_mod">
-                  Enough</a>
-                <div class="wrapp-roulette-radio">
-                  <div class="roulette-seting-radio">
-                    <button onclick="onClick(event)" class="button-radio button-radio_dark">Clear</button>
-                    <button onclick="onClick(event)" class="button-radio">+10</button>
-                    <button onclick="onClick(event)" class="button-radio button-active">+100</button>
-                    <button onclick="onClick(event)" class="button-radio">+1000</button>
-                    <button onclick="onClick(event)" class="button-radio">1/2</button>
-                    <button onclick="onClick(event)" class="button-radio">x2</button>
-                    <button onclick="onClick(event)" class="button-radio button-radio_white">Max</button>
-                  </div>
-                </div>
               </div>
-              <div class="roulette-seting-total">
-                <a href="#" class="seting-btn-blue"></a>
-                <div class="wrapp-roulette-radio wrapp-roulette-radio_mod">
-                  <div class="roulette-seting-radio">
-                    <button onclick="onClick(event)" class="button-radio button-radio_dark">Clear</button>
-                    <button onclick="onClick(event)" class="button-radio">+10</button>
-                    <button onclick="onClick(event)" class="button-radio button-active">+100</button>
-                    <button onclick="onClick(event)" class="button-radio">+1000</button>
-                    <button onclick="onClick(event)" class="button-radio">1/2</button>
-                    <button onclick="onClick(event)" class="button-radio">x2</button>
-                    <button onclick="onClick(event)" class="button-radio button-radio_white">Max</button>
-                  </div>
-                </div>
-                <a href="#openCasino" class="seting-btn-dark">
-                  Enough</a>
-              </div>
-            </div>
-            <div class="win">
 
-              <div class="win__block">
-                <div class="win__head">
-                  <div class="win__block-title">
-                    <h2 class="win__title">WIN 2X</h2>
-                  </div>
-                  <div class="win__info">
-                    <h3 class="win__info-name">Players: <span class="color-blue">6</span></h3>
-                    <h3 class="win__info-name win__info-name_trx">TRX: <span class="color-red">657,561</span></h3>
-                  </div>
-                </div>
-                <div class="win__bottom">
-                  <div class="win__name">
-                    <p class="win__name-player">Verner2k</p>
-                    <p class="win__name-player win__name-player_trx">345,685</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">Forwolk</p>
-                    <p class=" win__name-player win__name-player_trx">240,500</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">Seizedwf</p>
-                    <p class="win__name-player win__name-player_trx">65,030</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">S1mple 3 </p>
-                    <p class="win__name-player win__name-player_trx">5,786</p>
-                  </div>
-                </div>
+              <div class="login">
+                <a href="#" class="btn-login">
+                  <span>Login via</span>
+                  <img src="img/trx.svg" alt="" />
+                  <span>TRONLINK</span>
+                </a>
               </div>
-              <div class="win__block">
-                <div class="win__head">
-                  <div class="win__block-title win__block-title_block2">
-                    <h2 class="win__title win__title_block2">WIN 14X</h2>
-                  </div>
-                  <div class="win__info">
-                    <h3 class="win__info-name">Players: <span class="color-blue">12</span></h3>
-                    <h3 class="win__info-name win__info-name_trx">TRX: <span class="color-red">198,115</span></h3>
-                  </div>
-                </div>
-                <div class="win__bottom">
-                  <div class="win__name">
-                    <p class="win__name-player">Verner2k</p>
-                    <p class="win__name-player win__name-player_trx">345,685</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">Forwolk</p>
-                    <p class=" win__name-player win__name-player_trx">240,500</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">Seizedwf</p>
-                    <p class="win__name-player win__name-player_trx">65,030</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">S1mple 3 </p>
-                    <p class="win__name-player win__name-player_trx">5,786</p>
-                  </div>
-                </div>
-              </div>
-              <div class="win__block">
-                <div class="win__head">
-                  <div class="win__block-title win__block-title_block3">
-                    <h2 class="win__title win__title_block3 ">WIN 2X</h2>
-                  </div>
-                  <div class="win__info">
-                    <h3 class="win__info-name">Players: <span class="color-blue">9</span></h3>
-                    <h3 class="win__info-name win__info-name_trx">TRX: <span class="color-red">94,043</span></h3>
-                  </div>
-                </div>
-                <div class="win__bottom">
-                  <div class="win__name">
-                    <p class="win__name-player">Verner2k</p>
-                    <p class="win__name-player win__name-player_trx">345,685</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">Forwolk </p>
-                    <p class=" win__name-player win__name-player_trx">240,500</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">Seizedwf</p>
-                    <p class="win__name-player win__name-player_trx">65,030</p>
-                  </div>
-                  <div class="win__name">
-                    <p class="win__name-player">S1mple 3 </p>
-                    <p class="win__name-player win__name-player_trx">5,786</p>
-                  </div>
-                </div>
-              </div>
+              <button class="massage-btn" onclick="deskSidebar(event)">
+                <img src="img/barchat.png" alt="" />
+              </button>
             </div>
           </div>
-
         </section>
+      </header>
 
-        <section class="right-sidebar-section">
-          <div class="gradient-block"></div>
-          <div class="right-wrapp">
+      <main class="main">
+        <div class="container-big">
+          <section class="left-sidebar">
+            <div class="left-sidebar__wrapp">
+              <div class="left-sidebar__top">
+                <a href="rules.html" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img1"></div>
+                </a>
+                <a href="table.html" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img2"></div>
+                </a>
+                <a href="php.html" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img3"></div>
+                </a>
+                <a href="#" class="left-sidebar__link">
+                  <div class="left-sidebar__icon left-sidebar__icon_img4"></div>
+                </a>
+              </div>
 
-            <div class="right-btn-chat">
-
-              <p class="right-btn-name">Онлайн чата: <span class="green">563</span><button class="button"></button>
-              </p>
-            </div>
-
-
-            <div class="chat" dir="ltr">
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Forwolk gg.bet</p>
-                  <span class="chat__clock">19:36:42</span>
-                </div>
-                <span class="chat__massage">Бля, опять проебал все на
-                  блеке..</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Forwolk gg.bet</p>
-                  <span class="chat__clock">19:36:42</span>
-                </div>
-                <span class="chat__massage">прив пацаны сматрите щас
-                  будет зельоный понели да</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Forwolk gg.bet</p>
-                  <span class="chat__clock">19:36:42</span>
-                </div>
-                <span class="chat__massage">Бля, опять проебал все на
-                  блеке..</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Seizedwf</p>
-                  <span class="chat__clock">19:36:58</span>
-                </div>
-                <span class="chat__massage">а я тебе говорил чтобы ты не
-                  ставил на него</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__num ">253</p>
-                  <p class="chat__name chat__name_mod red">Verner2k</p>
-                  <span class="chat__clock">19:37:15</span>
-                </div>
-                <span class="chat__massage red">Ну лох, че тут еще сказать? :)</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">S1mple </p>
-                  <span class="chat__clock">19:37:27</span>
-                </div>
-                <span class="chat__massage">Че вы тут все как обосранные
-                  сидите?</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Pr0NAg1Bat0_r</p>
-                  <span class="chat__clock">19:37:51</span>
-                </div>
-                <span class="chat__massage chat__massage_smile">О, Симплуха пришел</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Verner2k</p>
-                  <span class="chat__clock">19:38:03</span>
-                </div>
-                <span class="chat__massage">ОПЯТЬ ЭТОТ РЕД ВЫПАЛ!!111!!!1</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name blue">EnjoyMaloy</p>
-                  <span class="chat__clock">19:38:27</span>
-                </div>
-                <span class="chat__massage blue">Не капси, а то мут на сутки
-                  получишь!</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Forwolk gg.bet</p>
-                  <span class="chat__clock">19:36:42</span>
-                </div>
-                <span class="chat__massage">Бля, опять проебал все на
-                  блеке..</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Forwolk gg.bet</p>
-                  <span class="chat__clock">19:36:42</span>
-                </div>
-                <span class="chat__massage">Бля, опять проебал все на
-                  блеке..</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Forwolk gg.bet</p>
-                  <span class="chat__clock">19:36:42</span>
-                </div>
-                <span class="chat__massage">Бля, опять проебал все на
-                  блеке..</span>
-              </div>
-              <div class="chat__block">
-                <div class="chat__wrapp-name">
-                  <p class="chat__name">Forwolk gg.bet</p>
-                  <span class="chat__clock">19:36:42</span>
-                </div>
-                <span class="chat__massage">Бля, опять проебал все на
-                  блеке..</span>
+              <div class="left-sidebar__bottom">
+                <a href="#" class="left-sidebar__link left-sidebar__link_bg">
+                  <div class="left-sidebar__icon left-sidebar__icon_img5"></div>
+                </a>
+                <a href="#" class="left-sidebar__link left-sidebar__link_bg">
+                  <div class="left-sidebar__icon left-sidebar__icon_img6"></div>
+                </a>
               </div>
             </div>
+          </section>
+          <section class="roulette-section section-seting">
+            <div class="container-small">
+              <div class="round-hash">
+                <h2 class="round-name">Round hash:</h2>
+                <p class="round-value">
+                  dk40sdal3201fl2q30asdlf35ylxzoa045956sdkldu2dal3201fl2q30asddk40sdal3201flsdlf35ylxzoa
+                </p>
+              </div>
+              <div class="progress-bar">
+                <svg viewBox="0 0 50 2" style="width: 100%">
+                  <defs>
+                    <linearGradient
+                      id="e"
+                      x1="0"
+                      y1="1"
+                      x2="55"
+                      y2="1"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#56ab2f" offset="0" />
+                      <stop stop-color="#a8e063" offset="1" />
+                    </linearGradient>
+                  </defs>
+                  <line
+                    x1="0"
+                    y1="1"
+                    x2="55"
+                    y2="1"
+                    stroke="#353b56"
+                    stroke-dasharray="50 2"
+                  ></line>
+                  <line
+                    x1="0"
+                    y1="1"
+                    x2="55"
+                    y2="1"
+                    stroke="url(#e)"
+                    stroke-dasharray="50 1"
+                    id="dashstart"
+                    class="green"
+                  ></line>
+                  <line
+                    x1="0"
+                    y1="1"
+                    x2="55"
+                    y2="1"
+                    stroke="#2a2f42"
+                    stroke-dasharray="1 4"
+                    stroke-dashoffset="3"
+                    class="separator"
+                  ></line>
+                </svg>
+              </div>
+              <div class="rolling-in"><span>Rolling in 6.48...</span></div>
+              <div class="slider-roulette">
+                <div class="swiper-container swiperRoulete">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><span>7</span></div>
+                    <div class="swiper-slide"><span>1</span></div>
+                    <div class="swiper-slide"><span>14</span></div>
+                    <div class="swiper-slide"><span>3</span></div>
+                    <div class="swiper-slide"><span>5</span></div>
+                    <div class="swiper-slide"><span>12</span></div>
+                    <div class="swiper-slide"><span>8</span></div>
+                    <div class="swiper-slide"><span>11</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                    <div class="swiper-slide"><span>4</span></div>
+                    <div class="swiper-slide"><span>2</span></div>
+                    <div class="swiper-slide"><span>6</span></div>
+                    <div class="swiper-slide"><span>13</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                    <div class="swiper-slide"><span>7</span></div>
+                    <div class="swiper-slide"><span>1</span></div>
+                    <div class="swiper-slide"><span>14</span></div>
+                    <div class="swiper-slide"><span>3</span></div>
+                    <div class="swiper-slide"><span>5</span></div>
+                    <div class="swiper-slide"><span>12</span></div>
+                    <div class="swiper-slide"><span>8</span></div>
+                    <div class="swiper-slide"><span>11</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                    <div class="swiper-slide"><span>4</span></div>
+                    <div class="swiper-slide"><span>2</span></div>
+                    <div class="swiper-slide"><span>6</span></div>
+                    <div class="swiper-slide"><span>13</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                    <div class="swiper-slide"><span>7</span></div>
+                    <div class="swiper-slide"><span>1</span></div>
+                    <div class="swiper-slide"><span>14</span></div>
+                    <div class="swiper-slide"><span>3</span></div>
+                    <div class="swiper-slide"><span>5</span></div>
+                    <div class="swiper-slide"><span>12</span></div>
+                    <div class="swiper-slide"><span>8</span></div>
+                    <div class="swiper-slide"><span>11</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                    <div class="swiper-slide"><span>4</span></div>
+                    <div class="swiper-slide"><span>2</span></div>
+                    <div class="swiper-slide"><span>6</span></div>
+                    <div class="swiper-slide"><span>13</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                    <div class="swiper-slide"><span>7</span></div>
+                    <div class="swiper-slide"><span>1</span></div>
+                    <div class="swiper-slide"><span>14</span></div>
+                    <div class="swiper-slide"><span>3</span></div>
+                    <div class="swiper-slide"><span>5</span></div>
+                    <div class="swiper-slide"><span>12</span></div>
+                    <div class="swiper-slide"><span>8</span></div>
+                    <div class="swiper-slide"><span>11</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                    <div class="swiper-slide"><span>4</span></div>
+                    <div class="swiper-slide"><span>2</span></div>
+                    <div class="swiper-slide"><span>6</span></div>
+                    <div class="swiper-slide"><span>13</span></div>
+                    <div class="swiper-slide swiper-slide_green">
+                      <span>0</span>
+                    </div>
+                  </div>
 
-
-
-          </div>
-          <form method="post" class="chat-write">
-            <textarea type="text" class="chat-write-input" placeholder="Введите сообщение..."></textarea>
-            <div class="chat-write-smile"></div>
-            <button class="chat-write-button"></button>
-            <div class="smile-block-wrapp">
-              <div class="smile-block">
-
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img1"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img2"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img3"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img4"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img5"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img6"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img7"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img8"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img9"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img10"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img11"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img12"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img13"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img4"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img15"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img16"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img7"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img8"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img19"></span></a>
-                <a href="#" class="smile-link"><span class="smile-img smile-img_img20"></span></a>
+                  <div class="swiper-pagination">
+                    <div class="swiper-block"></div>
+                    <div class="swiper-block"></div>
+                    <div class="swiper-block"></div>
+                    <div class="swiper-block"></div>
+                    <div class="swiper-block"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="roulette-info">
+                <div class="roulette-wrap-prew">
+                  <div class="roulette-prew">
+                    <div class="swiper-slide swiper-slide_mod">
+                      <span class="font-mod">12</span>
+                    </div>
+                    <div class="swiper-slide swiper-slide_mod">
+                      <span class="font-mod">8</span>
+                    </div>
+                    <div class="swiper-slide swiper-slide_mod">
+                      <span class="font-mod">11</span>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide_green swiper-slide_mod"
+                    >
+                      <span class="font-mod">0</span>
+                    </div>
+                    <div class="swiper-slide swiper-slide_mod">
+                      <span class="font-mod">11</span>
+                    </div>
+                  </div>
+                  <p class="roulette-desk">Previous rolls</p>
+                </div>
+                <div class="roulette-wrapp-next">
+                  <p class="roulette-desk roulette-desk_next">Last 100 rolls</p>
+                  <div class="roulette-next">
+                    <div class="swiper-slide swiper-slide_mod"></div>
+                    <span class="next-num">57</span>
+                    <div
+                      class="swiper-slide swiper-slide_green swiper-slide_mod"
+                    ></div>
+                    <span class="next-num">7</span>
+                    <div class="swiper-slide swiper-slide_mod"></div>
+                    <span class="next-num">36</span>
+                  </div>
+                </div>
+              </div>
+              <div class="roulette-seting">
+                <div class="roulette-seting-value">
+                  <div class="cripto-block">
+                    <span class="cripto-block__name">Количество:</span>
+                    <form class="cripto-block__form dateInput">
+                      <input
+                        type="number"
+                        class="cripto-block__input"
+                        id="dateInput-day"
+                        value="14288"
+                      />
+                      <span class="color-blue color-blue_red">TRX</span>
+                      <div class="cripto-block__wrapp-btn">
+                        <button
+                          type="button"
+                          class="cripto-block__dateplus"
+                        ></button>
+                        <button
+                          type="button"
+                          class="cripto-block__datemin"
+                        ></button>
+                      </div>
+                    </form>
+                  </div>
+                  <a
+                    href="#openCasino"
+                    class="seting-btn-dark seting-btn-dark_mod"
+                  >
+                    Enough</a
+                  >
+                  <div class="wrapp-roulette-radio">
+                    <div class="roulette-seting-radio">
+                      <button
+                        onclick="onClick(event)"
+                        class="button-radio button-radio_dark"
+                      >
+                        Clear
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        +10
+                      </button>
+                      <button
+                        onclick="onClick(event)"
+                        class="button-radio button-active"
+                      >
+                        +100
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        +1000
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        1/2
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        x2
+                      </button>
+                      <button
+                        onclick="onClick(event)"
+                        class="button-radio button-radio_white"
+                      >
+                        Max
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="roulette-seting-total">
+                  <a href="#" class="seting-btn-blue"></a>
+                  <div class="wrapp-roulette-radio wrapp-roulette-radio_mod">
+                    <div class="roulette-seting-radio">
+                      <button
+                        onclick="onClick(event)"
+                        class="button-radio button-radio_dark"
+                      >
+                        Clear
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        +10
+                      </button>
+                      <button
+                        onclick="onClick(event)"
+                        class="button-radio button-active"
+                      >
+                        +100
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        +1000
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        1/2
+                      </button>
+                      <button onclick="onClick(event)" class="button-radio">
+                        x2
+                      </button>
+                      <button
+                        onclick="onClick(event)"
+                        class="button-radio button-radio_white"
+                      >
+                        Max
+                      </button>
+                    </div>
+                  </div>
+                  <a href="#openCasino" class="seting-btn-dark"> Enough</a>
+                </div>
+              </div>
+              <div class="win">
+                <div class="win__block">
+                  <div class="win__head">
+                    <div class="win__block-title">
+                      <h2 class="win__title">WIN 2X</h2>
+                    </div>
+                    <div class="win__info">
+                      <h3 class="win__info-name">
+                        Players: <span class="color-blue">6</span>
+                      </h3>
+                      <h3 class="win__info-name win__info-name_trx">
+                        TRX: <span class="color-red">657,561</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="win__bottom">
+                    <div class="win__name">
+                      <p class="win__name-player">Verner2k</p>
+                      <p class="win__name-player win__name-player_trx">
+                        345,685
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">Forwolk</p>
+                      <p class="win__name-player win__name-player_trx">
+                        240,500
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">Seizedwf</p>
+                      <p class="win__name-player win__name-player_trx">
+                        65,030
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">S1mple 3</p>
+                      <p class="win__name-player win__name-player_trx">5,786</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="win__block">
+                  <div class="win__head">
+                    <div class="win__block-title win__block-title_block2">
+                      <h2 class="win__title win__title_block2">WIN 14X</h2>
+                    </div>
+                    <div class="win__info">
+                      <h3 class="win__info-name">
+                        Players: <span class="color-blue">12</span>
+                      </h3>
+                      <h3 class="win__info-name win__info-name_trx">
+                        TRX: <span class="color-red">198,115</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="win__bottom">
+                    <div class="win__name">
+                      <p class="win__name-player">Verner2k</p>
+                      <p class="win__name-player win__name-player_trx">
+                        345,685
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">Forwolk</p>
+                      <p class="win__name-player win__name-player_trx">
+                        240,500
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">Seizedwf</p>
+                      <p class="win__name-player win__name-player_trx">
+                        65,030
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">S1mple 3</p>
+                      <p class="win__name-player win__name-player_trx">5,786</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="win__block">
+                  <div class="win__head">
+                    <div class="win__block-title win__block-title_block3">
+                      <h2 class="win__title win__title_block3">WIN 2X</h2>
+                    </div>
+                    <div class="win__info">
+                      <h3 class="win__info-name">
+                        Players: <span class="color-blue">9</span>
+                      </h3>
+                      <h3 class="win__info-name win__info-name_trx">
+                        TRX: <span class="color-red">94,043</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="win__bottom">
+                    <div class="win__name">
+                      <p class="win__name-player">Verner2k</p>
+                      <p class="win__name-player win__name-player_trx">
+                        345,685
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">Forwolk</p>
+                      <p class="win__name-player win__name-player_trx">
+                        240,500
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">Seizedwf</p>
+                      <p class="win__name-player win__name-player_trx">
+                        65,030
+                      </p>
+                    </div>
+                    <div class="win__name">
+                      <p class="win__name-player">S1mple 3</p>
+                      <p class="win__name-player win__name-player_trx">5,786</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </form>
+          </section>
 
-        </section>
-      </div>
+          <section class="right-sidebar-section">
+            <div class="gradient-block"></div>
+            <div class="right-wrapp">
+              <div class="right-btn-chat">
+                <p class="right-btn-name">
+                  Онлайн чата: <span class="green">563</span
+                  ><button class="button"></button>
+                </p>
+              </div>
 
-
-    </main>
-
-    <footer class="footer">
-
-    </footer>
-
-    <form id="openModal" class="modalwindow" method="post" action="#">
-      <div class="modal-content">
-        <div class="modal-content-wrapp">
-          <a href="#close" title="Закрыть" class="close-modal"></a>
-          <h2 class="modal-title">Redeem code</h2>
-          <span class="modal-subtitle">Promo code</span>
-
-          <div class="modal-input-wrap">
-
-            <input type="text" class="modal-input">
-            <button type="submit" class="modal-btn">Redeem</button>
-          </div>
-
-
-          <span class="modal-subtitle">Bonus code</span>
-
-          <div class="modal-input-wrap">
-
-            <input type="text" class="modal-input">
-            <button type="submit" class="modal-btn">Redeem</button>
-          </div>
-
-
-          <div class="modal-static">
-            <div class="modal-info">
-              <img src="img/modalUser.png" alt="">
-              <div class="modal-static-user">
-                <p class="modal-user-total">Использован:</p>
-                <p class="modal-user-num">1,049</p>
+              <div class="chat" dir="ltr">
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Forwolk gg.bet</p>
+                    <span class="chat__clock">19:36:42</span>
+                  </div>
+                  <span class="chat__massage"
+                    >Бля, опять проебал все на блеке..</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Forwolk gg.bet</p>
+                    <span class="chat__clock">19:36:42</span>
+                  </div>
+                  <span class="chat__massage"
+                    >прив пацаны сматрите щас будет зельоный понели да</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Forwolk gg.bet</p>
+                    <span class="chat__clock">19:36:42</span>
+                  </div>
+                  <span class="chat__massage"
+                    >Бля, опять проебал все на блеке..</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Seizedwf</p>
+                    <span class="chat__clock">19:36:58</span>
+                  </div>
+                  <span class="chat__massage"
+                    >а я тебе говорил чтобы ты не ставил на него</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__num">253</p>
+                    <p class="chat__name chat__name_mod red">Verner2k</p>
+                    <span class="chat__clock">19:37:15</span>
+                  </div>
+                  <span class="chat__massage red"
+                    >Ну лох, че тут еще сказать? :)</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">S1mple</p>
+                    <span class="chat__clock">19:37:27</span>
+                  </div>
+                  <span class="chat__massage"
+                    >Че вы тут все как обосранные сидите?</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Pr0NAg1Bat0_r</p>
+                    <span class="chat__clock">19:37:51</span>
+                  </div>
+                  <span class="chat__massage chat__massage_smile"
+                    >О, Симплуха пришел</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Verner2k</p>
+                    <span class="chat__clock">19:38:03</span>
+                  </div>
+                  <span class="chat__massage"
+                    >ОПЯТЬ ЭТОТ РЕД ВЫПАЛ!!111!!!1</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name blue">EnjoyMaloy</p>
+                    <span class="chat__clock">19:38:27</span>
+                  </div>
+                  <span class="chat__massage blue"
+                    >Не капси, а то мут на сутки получишь!</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Forwolk gg.bet</p>
+                    <span class="chat__clock">19:36:42</span>
+                  </div>
+                  <span class="chat__massage"
+                    >Бля, опять проебал все на блеке..</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Forwolk gg.bet</p>
+                    <span class="chat__clock">19:36:42</span>
+                  </div>
+                  <span class="chat__massage"
+                    >Бля, опять проебал все на блеке..</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Forwolk gg.bet</p>
+                    <span class="chat__clock">19:36:42</span>
+                  </div>
+                  <span class="chat__massage"
+                    >Бля, опять проебал все на блеке..</span
+                  >
+                </div>
+                <div class="chat__block">
+                  <div class="chat__wrapp-name">
+                    <p class="chat__name">Forwolk gg.bet</p>
+                    <span class="chat__clock">19:36:42</span>
+                  </div>
+                  <span class="chat__massage"
+                    >Бля, опять проебал все на блеке..</span
+                  >
+                </div>
               </div>
             </div>
-            <div class="modal-info">
-              <img src="img/modaltrx.png" alt="">
-              <div class="modal-static-user">
-                <p class="modal-user-total">TRX получено:</p>
-                <p class="modal-user-num">54,038</p>
+            <form method="post" class="chat-write">
+              <textarea
+                type="text"
+                class="chat-write-input"
+                placeholder="Введите сообщение..."
+              ></textarea>
+              <div class="chat-write-smile"></div>
+              <button class="chat-write-button"></button>
+              <div class="smile-block-wrapp">
+                <div class="smile-block">
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img1"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img2"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img3"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img4"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img5"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img6"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img7"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img8"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img9"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img10"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img11"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img12"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img13"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img4"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img15"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img16"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img7"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img8"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img19"></span
+                  ></a>
+                  <a href="#" class="smile-link"
+                    ><span class="smile-img smile-img_img20"></span
+                  ></a>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer"></footer>
+
+      <form id="openModal" class="modalwindow" method="post" action="#">
+        <div class="modal-content">
+          <div class="modal-content-wrapp">
+            <a href="#close" title="Закрыть" class="close-modal"></a>
+            <h2 class="modal-title">Redeem code</h2>
+            <span class="modal-subtitle">Promo code</span>
+
+            <div class="modal-input-wrap">
+              <input type="text" class="modal-input" />
+              <button type="submit" class="modal-btn">Redeem</button>
+            </div>
+
+            <span class="modal-subtitle">Bonus code</span>
+
+            <div class="modal-input-wrap">
+              <input type="text" class="modal-input" />
+              <button type="submit" class="modal-btn">Redeem</button>
+            </div>
+
+            <div class="modal-static">
+              <div class="modal-info">
+                <img src="img/modalUser.png" alt="" />
+                <div class="modal-static-user">
+                  <p class="modal-user-total">Использован:</p>
+                  <p class="modal-user-num">1,049</p>
+                </div>
+              </div>
+              <div class="modal-info">
+                <img src="img/modaltrx.png" alt="" />
+                <div class="modal-static-user">
+                  <p class="modal-user-total">TRX получено:</p>
+                  <p class="modal-user-num">54,038</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </form>
-    <form id="openCasino" class="modalcasino" method="post" action="#">
-      <div class="modal-content">
-        <div class="modal-content-wrapp">
-          <a href="#close" title="Закрыть" class="close-modal"></a>
-          <h2 class="modal-title">Купить <span class="color-blue">Фишка х1</span></h2>
-          <div class="modal-body">
-            <img src="img/Фишка.png" alt="">
-            <div class="modal-info">
-              <p class="modal-subtitle">Кол-во фишек:</p>
-              <div class="cripto-block">
-                <span class="cripto-block__name">Введите число:</span>
-                <div class="cripto-block__form dateInput">
-                  <input type="number" class="cripto-block__input" id="dateInput-day" value="1">
-                  <button type="button" class="cripto-block__dateplus"
-                    onclick="input_val('dec','dateInput-day')"></button>
-                  <button type="button" class="cripto-block__datemin"
-                    onclick="input_val('inc','dateInput-day')"></button>
-                  <span class="color-blue ">TLT</span>
+      </form>
+      <form id="openCasino" class="modalcasino" method="post" action="#">
+        <div class="modal-content">
+          <div class="modal-content-wrapp">
+            <a href="#close" title="Закрыть" class="close-modal"></a>
+            <h2 class="modal-title">
+              Купить <span class="color-blue">Фишка х1</span>
+            </h2>
+            <div class="modal-body">
+              <img src="img/Фишка.png" alt="" />
+              <div class="modal-info">
+                <p class="modal-subtitle">Кол-во фишек:</p>
+                <div class="cripto-block">
+                  <span class="cripto-block__name">Введите число:</span>
+                  <div class="cripto-block__form dateInput">
+                    <input
+                      type="number"
+                      class="cripto-block__input"
+                      id="dateInput-day"
+                      value="1"
+                    />
+                    <div class="cripto-block__wrapp-btn">
+                      <button
+                        type="button"
+                        class="cripto-block__dateplus"
+                        onclick="input_val('dec','dateInput-day')"
+                      ></button>
+                      <button
+                        type="button"
+                        class="cripto-block__datemin"
+                        onclick="input_val('inc','dateInput-day')"
+                      ></button>
+                    </div>
+
+                    <span class="color-blue">TLT</span>
+                  </div>
+                </div>
+                <button class="modal-btn">Купить за 100,000</button>
+                <p class="modal-subtitle">Баланс TLT:</p>
+
+                <div class="currency-wrapp currency-wrapp_modal">
+                  <p class="currency-num currency-num_modal">0.305</p>
+                  <span class="currency-name currency-name_modal">TLT</span>
+                  <button
+                    type="button"
+                    class="currency-btn currency-btn_modal"
+                  ></button>
                 </div>
               </div>
-              <button class="modal-btn">Купить за 100,000</button>
-              <p class="modal-subtitle">Баланс TLT:</p>
-
-              <div class="currency-wrapp currency-wrapp_modal">
-                <p class="currency-num currency-num_modal">0.305</p>
-                <span class="currency-name currency-name_modal">TLT</span>
-                <button type="button" class="currency-btn currency-btn_modal"></button>
-              </div>
-
             </div>
           </div>
-
-
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
 
-
-
-
-  </div>
-
-
-  <script src="js/swiper.js"></script>
-  <script src="js/sliderRoulette.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/swiper.js"></script>
+    <script src="js/sliderRoulette.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
